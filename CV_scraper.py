@@ -133,7 +133,7 @@ def extract_skills(text):
     nlp_text = nlp(text)
 
     tokens = [token.text for token in nlp_text if not token.is_stop and token.is_alpha and token.sent]
-
+    #import your own data csv file
     data = pd.read_csv("sk.csv")
     skills = set(data['Skill'].str.lower().tolist())
 
@@ -146,6 +146,7 @@ skills = extract_skills(cleaned_text)
 print("Skills:", skills)
 
 def match_skills_with_job_domain(skills):
+    #import your own data csv file
     data = pd.read_csv('job2.csv')
 
     skill_domain_mapping = {}
