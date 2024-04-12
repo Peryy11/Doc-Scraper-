@@ -10,8 +10,8 @@ import re
 #from transformers import AutoTokenizer, AutoModelForTokenClassification
 #from transformers import pipeline
 import pandas as pd
-
-file_path = r"C:\Users\Best Pc Shop\OneDrive\Bureau\Stage Medianet\CV_Asma_Negra.pdf"
+#replace with proper path
+file_path = r"path/to/pdf"
 text = ''
 
 def remove_unicode(text):
